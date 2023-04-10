@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +19,11 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg border-bottom">
+    <header class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand w-50" href="#"><img src="./images/logo-header.png" alt="" class="w-75"></a>
+            <a class="navbar-brand w-50" href="./index.html">
+                <h1><img src="./images/logo-header.png" alt="" class="w-75"> </h1>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,19 +31,19 @@
             <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav w-100 justify-content-between">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="./index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Empresa</a>
+                        <a class="nav-link" href="./pages/empresa.html">Empresa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
+                        <a class="nav-link" href="./pages/productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Preguntas frecuentes</a>
+                        <a class="nav-link" href="./pages/preguntas frecuentes.html">Preguntas frecuentes</a>
                     </li>
                 </ul>
             </nav>
@@ -48,151 +51,118 @@
     </header>
 
     <main>
-        <hr>
-        <section class="intro-seccion">
-            <div class="productos-comercializados">
-                <h2>PRODUCTOS QUE COMERCIALIZAMOS</h2>
+        <section>
+            <div class="seccion-img-central">
             </div>
         </section>
-        <section class="intro-seccion">
-            <div class="container">
-                <div class="row">
-                    <div class="columna-papel-hi-ins">
-                        <div class="titulo-papel-hi-ins">
-                            <figure>
-                                <img class="container__img" src="./images/higienico-institucional.png"
-                                    alt="Rollo papel higienico institucional">
-                            </figure>
-                            <br>
-                            <strong>
-                                <span>
-                                    <h3>PAPEL HIGIENICO <br> INSTITUCIONAL </h3>
-                                </span>
-                            </strong>
-                        </div>
+        <section class="seccion-productos-comecializados">
+            <div>
+                <h2 class="titulo-productos-comercializados">PRODUCTOS QUE COMERCIALIZAMOS</h2>
+            </div>
+            <div class="fila-productos">
+                <div>
+                    <div class="items-fila">
+                        <figure>
+                            <img class="container__img" src="./images/higienico-institucional.png"
+                                alt="Rollo papel higienico institucional">
+                        </figure>
+                        <br>
+                        <strong>
+                            <span>
+                                <h3 class="titulos-productos-filas">PAPEL HIGIENICO <br> INSTITUCIONAL </h3>
+                            </span>
+                        </strong>
                     </div>
-                    <div class="columna-toalla-en-rollo">
-                        <div>
-                            <figure>
-                                <img class="container__img" src="./images/toallas-rollo.png"
-                                    alt="Rollo de toalla de manos">
-                            </figure>
-                            <br>
-                            <strong>
-                                <span>
-                                    <h3>TOALLAS EN <br> ROLLO</h3>
-                                </span>
-                            </strong>
-                        </div>
+                    <div class="items-fila">
+                        <figure>
+                            <img class="container__img" src="./images/toallas-rollo.png" alt="Rollo de toalla de manos">
+                        </figure>
+                        <br>
+                        <strong>
+                            <span>
+                                <h3 class="titulos-productos-filas">TOALLAS EN <br> ROLLO</h3>
+                            </span>
+                        </strong>
                     </div>
-                    <div class="columna-toallas-intercaladas">
-                        <div>
-                            <figure>
-                                <img class="container__img" src="./images/toallas-intercaladas.png"
-                                    alt="Paquete de toallas intercaladas">
-                            </figure>
-                            <br>
-                            <strong>
-                                <span>
-                                    <h3>TOALLAS <br> INTERCALADAS</h3>
-                                </span>
-                            </strong>
-                        </div>
+                    <div class="items-fila">
+                        <figure>
+                            <img class="container__img" src="./images/toallas-intercaladas.png"
+                                alt="Paquete de toallas intercaladas">
+                        </figure>
+                        <br>
+                        <strong>
+                            <span>
+                                <h3 class="titulos-productos-filas">TOALLAS <br> INTERCALADAS</h3>
+                            </span>
+                        </strong>
                     </div>
-                    <div class="columna-bobinas-industriales">
-                        <div>
-                            <figure>
-                                <img class="container__img" src="./images/bobina-industrial.png"
-                                    alt="Bobina industrial">
-                            </figure>
-                            <br>
-                            <strong>
-                                <span>
-                                    <h3>BOBINAS <br> INDUSTRIALES</h3>
-                                </span>
-                            </strong>
-                        </div>
+                    <div class="items-fila">
+                        <figure>
+                            <img class="container__img" src="./images/bobina-industrial.png" alt="Bobina industrial">
+                        </figure>
+                        <br>
+                        <strong>
+                            <span>
+                                <h3 class="titulos-productos-filas">BOBINAS <br> INDUSTRIALES</h3>
+                            </span>
+                        </strong>
                     </div>
-                    <div class="columna-papel-ig-bm">
-                        <div>
-                            <figure>
-                                <img class="container__img" src="./images/higienico-familiar.png"
-                                    alt="Rollo de papel higienico bajo metraje">
-                            </figure>
-                            <br>
-                            <strong>
-                                <span>
-                                    <h3>PAPEL HIGIENICO <br> BAJO METRAJE</h3>
-                                </span>
-                            </strong>
-                        </div>
+                    <div class="items-fila">
+                        <figure>
+                            <img class="container__img" src="./images/higienico-familiar.png"
+                                alt="Rollo de papel higienico bajo metraje">
+                        </figure>
+                        <br>
+                        <strong>
+                            <span>
+                                <h3 class="titulos-productos-filas">PAPEL HIGIENICO <br> BAJO METRAJE</h3>
+                            </span>
+                        </strong>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="medioambiente-barra">
-                <div>
+        <section class="contenedor-cards">
+            <div class="cards">
+                <div class="medioambiente-arbol">
                     <figure>
-                        <img class="imagen-medioambiente" src="./images/medioambiente.jpg"
+                        <img class="medioambiente-imagen" src="./images/medioambiente.png"
                             alt="Arbol en una bolsa de cristal">
                     </figure>
                 </div>
-                <div>
+                <div class="medioambiente-parrafo-estilos">
                     <h4>
-                        <p class="parrafo-medioambiente">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="medioambiente-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Ducimus officiis velit sequi necessitatibus animi doloremque atque repellat mollitia sunt
                             dolores? Exercitationem suscipit velit fugiat provident. Aspernatur sint sit beatae maiores.
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint quidem eius rerum
                             accusamus temporibus, est dignissimos molestias, pariatur repellat quod provident minima
                             deserunt nostrum fugiat mollitia sequi fugit autem! Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Consequatur pariatur facere cum aliquam illum ratione nam deserunt quaerat
-                            architecto ipsa nemo doloremque, aliquid blanditiis neque quisquam a praesentium accusantium
-                            animi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni porro ullam autem
-                            illum quis amet, sed iusto, commodi exercitationem unde, eius quas! Aliquam, nostrum
-                            voluptatibus. Asperiores assumenda atque eos ipsum? Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Perferendis, iure a. Adipisci porro repudiandae, suscipit architecto vel
-                            nostrum ipsam quis sequi, assumenda dolor delectus animi aspernatur eaque libero. Beatae,
-                            odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et impedit neque laboriosam!
-                            Nostrum doloremque dolor, veritatis quis ipsa a assumenda consequuntur explicabo sed nobis
-                            pariatur architecto, repudiandae voluptatibus omnis at! Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Eveniet dolores maiores vel pariatur cumque animi a
-                            voluptatibus reiciendis maxime, earum qui labore esse laborum facilis, corporis ab vitae
-                            sequi quae.</p>
+                            adipisicing elit. Consequatur pariatur facere cum aliquam illum ratione nam deserunt quaerat accusamus temporibus, est dignissimos molestias, pariatur repellat quod provident minima
+                            deserunt nostrum fugiat mollitia sequi fugit autem! Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Consequatur pariatur facere cum aliquam illum ratione nam deserunt quaerat accusamus temporibus, est dignissimos molestias, pariatur repellat quod provident minima
+                            deserunt nostrum fugiat mollitia sequi fugit autem! Lorem ipsum dolor, sit amet consectetur</p>
                     </h4>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="entregas-barra">
                 <div>
                     <figure>
-                        <img class="imagen-entregas" src="./images/camion-delivery.jpg"
+                        <img class="entregas-imagen" src="./images/camion-delivery.jpg"
                             alt="Camión en una ruta realizando una entrega">
                     </figure>
                 </div>
                 <div>
                     <h4>
-                        <p class="parrafo-entregas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                            officiis velit sequi necessitatibus animi doloremque atque repellat mollitia sunt dolores?
-                            Exercitationem suscipit velit fugiat provident. Aspernatur sint sit beatae maiores. Lorem
-                            ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint quidem eius rerum accusamus
-                            temporibus, est dignissimos molestias, pariatur repellat quod provident minima deserunt
-                            nostrum fugiat mollitia sequi fugit autem! Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Consequatur pariatur facere cum aliquam illum ratione nam deserunt quaerat
-                            architecto ipsa nemo doloremque, aliquid blanditiis neque quisquam a praesentium accusantium
-                            animi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni porro ullam autem
-                            illum quis amet, sed iusto, commodi exercitationem unde, eius quas! Aliquam, nostrum
-                            voluptatibus. Asperiores assumenda atque eos ipsum? Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Perferendis, iure a. Adipisci porro repudiandae, suscipit architecto vel
-                            nostrum ipsam quis sequi, assumenda dolor delectus animi aspernatur eaque libero. Beatae,
-                            odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et impedit neque laboriosam!
-                            Nostrum doloremque dolor, veritatis quis ipsa a assumenda consequuntur explicabo sed nobis
-                            pariatur architecto, repudiandae voluptatibus omnis at! Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Eveniet dolores maiores vel pariatur cumque animi a
-                            voluptatibus reiciendis maxime, earum qui labore esse laborum facilis, corporis ab vitae
-                            sequi quae.</p>
+                        <p class="entregas-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ducimus officiis velit sequi necessitatibus animi doloremque atque repellat mollitia sunt
+                            dolores? Exercitationem suscipit velit fugiat provident. Aspernatur sint sit beatae maiores.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint quidem eius rerum
+                            accusamus temporibus, est dignissimos molestias, pariatur repellat quod provident minima
+                            deserunt nostrum fugiat mollitia sequi fugit autem! Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Consequatur pariatur facere cum aliquam illum ratione nam deserunt quaerataccusamus temporibus, est dignissimos molestias, pariatur repellat quod provident minima
+                            deserunt nostrum fugiat mollitia sequi fugit autem! Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Consequatur pariatur facere cum aliquam illum ratione nam deserunt quaerat accusamus temporibus, est dignissimos molestias, pariatur repellat quod provident minima
+                            deserunt nostrum fugiat mollitia sequi fugit autem! Lorem ipsum dolor, sit amet consectetur</p>
                     </h4>
                 </div>
             </div>

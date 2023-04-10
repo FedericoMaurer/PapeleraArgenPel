@@ -1,7 +1,9 @@
+/* ----Reseteo---- */
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 a {
@@ -32,98 +34,167 @@ footer {
 
 }
 
-/* ------- COMPONENTES --------  */
-
 /* ---- HEADER ---- */
 
-.navbar{
+.navbar {
     background-color: #cbe4de;
 }
 
-
 .nav-link {
     color: #444444;
-    
 }
 
-/* .header-index {
-    background-image: url(../images/imagen-central-index.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    padding-bottom: 32em;
-}
-
-a {
-    text-decoration: none;
-    color: #3b4754;
-}
-
-.barra-navegacion {
+.nav-item {
     font-family: "Source Sans Pro", sans-serif;
-    list-style-type: none;
     font-size: 1.3rem;
-    background-color: #cbe4dee0;
-    background-size: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 1.5rem;
 }
 
-.titulo-principal {
-    color: #000000;
-    font-size: 1.8rem;
-    font-weight: 390px;
-    font-family: "Syncopate", sans-serif;
-    background-color: #20a1b3;
-    width: fit-content;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-    padding: 20px 20px;
+/* ----Imagen central Index ---- */
 
-} */
-
-.intro-seccion {
-    display: flex;
-    background-color: #cde5df;
-    align-content: center;
-    justify-content: center;
-}
-
-
-.productos-comercializados {
-    font-size: 4.5vh;
-    font-weight: 600px;
-    font-family: "Source Sans Pro", sans-serif;
-    padding: 2.5em;
-    color: #000000;
-}
-
-.container {
-    font-family: "Source Sans Pro", sans-serif;
+.seccion-img-central {
+    background-image: url(../images/imagen-central-index.jpg);
     width: 100%;
+    height: 40rem;
+    background-size: cover
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+/* ----Barra productos Index---- */
+
+.titulo-productos-comercializados {
     text-align: center;
-    gap: 70px;
-    font-size: 1.2rem;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 1.4rem;
+}
+
+.fila-productos {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.titulos-productos-filas {
+    font-size: 1.5rem;
 }
 
 .container__img {
-    width: auto;
-    height: 4rem;
+    width: 100%;
 }
 
-.medioambiente-barra {
+div .items-fila {
+    display: flex;
+}
+
+.items-fila {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+@media (min-width: 1200px){
+    .titulo-productos-comercializados{
+        text-align: center;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        font-size: 2rem;    
+    }
+
+    .fila-productos div {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+        padding-bottom: 5rem;
+        padding-top: 3rem;
+    }
+
+    div .items-fila {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .titulos-productos-filas {
+        font-size: 1.7rem;
+    }
+
+    .container__img{
+        width: 5rem;
+    }
+    
+
+}
+
+/* ---SECCION MEDIOAMBIENTE Y ENTREGAS--- */
+.medioambiente-imagen {
+    width: 100%;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding bottom: 1em ;
+    border-radius: 30px;
+}
+
+.medioambiente-parrafo {
+    text-align: center;
+    border: 0.1em solid black;
+    border-radius: 20px;
+    border-width: auto;
+}
+
+h4 {
+    padding: 1.5em;
+}
+
+.entregas-imagen {
+    width: 100%;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding bottom: 1em;
+    border-radius: 50px;
+}
+
+.entregas-parrafo {
+    text-align: center;
+    border: 0.1em solid black;
+    border-radius: 20px;
+    border-width: auto;
+
+}
+
+@media (min-width: 1200px){
+    .contenedor-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2,3fr);
+        max-width: 1600px;
+    }
+
+    .medioambiente-arbol{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .medioambiente-parrafo-estilos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+/* .medioambiente-barra {
     display: flex;
     padding-top: 7em;
     flex-direction: row;
@@ -171,7 +242,7 @@ a {
     padding-top: 30px;
     padding-right: 100px;
     font-family: "Source Sans Pro", sans-serif;
-}
+} */
 
 .footer__main {
     padding: auto;
@@ -246,7 +317,7 @@ a {
 
 .footer-contacto-contenido li a {
     color: #ffffff;
-}
+} 
 
 /* EMPRESA */
 

@@ -24,7 +24,7 @@ body {
 }
 
 
-footer {
+/* footer {
     background-color: #2c3333;
     color: #ffffff;
     font-family: "Source Sans Pro", sans-serif;
@@ -32,7 +32,7 @@ footer {
     padding-top: 4em;
     padding-bottom: 8em;
 
-}
+} */
 
 /* ---- HEADER ---- */
 
@@ -49,13 +49,100 @@ footer {
     font-size: 1.3rem;
 }
 
+/* ---- FOOTER ---- */
+.footer-main {
+    background-color: #2c3333;
+    color: white;
+    font-weight: 600px;
+}
+
+.contenido-contacto-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contenido-contacto-footer-items {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.horario-atencion {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-superior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    border: 0.2em solid white;
+}
+
+.footer-contacto-contenido li a{
+    color: white;
+}
+
+.footer-contacto-contenido {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 3em;
+    gap: 20px;
+}
+
+.footer-inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: #aaaaaa;
+    padding-bottom: 1px;
+}
+
+@media (min-width: 1200px) {
+    .footer-superior {
+        gap: 20em;
+        font-size: 1.5em;
+    }
+
+    .footer-inferior {
+        gap: 10em;
+    }
+
+    .footer-contacto-contenido{
+        font-size: 1.5em;
+    }
+
+    .contenedor-mapa { 
+        width: 700px;
+        height: 200px;
+    }
+
+}
+
 /* ----Imagen central Index ---- */
 
 .seccion-img-central {
     background-image: url(../images/imagen-central-index.jpg);
     width: 100%;
     height: 40rem;
-    background-size: cover
+    background-size: cover;
 }
 
 /* ----Barra productos Index---- */
@@ -111,6 +198,7 @@ div .items-fila {
         gap: 2.5rem;
         padding-bottom: 5rem;
         padding-top: 3rem;
+        max-width: 1400px;
     }
 
     div .items-fila {
@@ -136,14 +224,12 @@ div .items-fila {
     padding-top: 2em;
     padding-left: 2em;
     padding-right: 2em;
-    padding bottom: 1em ;
     border-radius: 30px;
 }
 
 .medioambiente-parrafo {
     text-align: center;
-    border: 0.1em solid black;
-    border-radius: 20px;
+    border: 0.1em solid #0b2a2c;
     border-width: auto;
 }
 
@@ -156,14 +242,12 @@ h4 {
     padding-top: 2em;
     padding-left: 2em;
     padding-right: 2em;
-    padding bottom: 1em;
     border-radius: 50px;
 }
 
 .entregas-parrafo {
     text-align: center;
-    border: 0.1em solid black;
-    border-radius: 20px;
+    border: 0.1em solid #0b2a2c;
     border-width: auto;
 
 }
@@ -177,7 +261,11 @@ h4 {
     .cards {
         display: grid;
         grid-template-columns: repeat(2,3fr);
-        max-width: 1600px;
+        max-width: 1400px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        gap: 50px
     }
 
     .medioambiente-arbol{
@@ -186,161 +274,91 @@ h4 {
         justify-content: center;
     }
 
-    .medioambiente-parrafo-estilos{
+    .medioambiente-parrafo-estilos {
+        display: flex;
+        padding-top: 40px;
+        max-height: 500px;
+    }
+
+    h4 .medioambiente-parrafo{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
+    .entregas-camion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .entregas-parrafo-estilos {
+        display: flex;
+        padding-top: 40px;
+        max-height: 1200px;
+    }
+
+    h4 .entregas-parrafo {
+        display: flex;
+    }
 }
-
-/* .medioambiente-barra {
-    display: flex;
-    padding-top: 7em;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-    background-color: #cde5df;
-}
-
-.imagen-medioambiente {
-    width: 750px;
-    border: #000000;
-    border-radius: 100px;
-    padding: 50px;
-}
-
-.parrafo-medioambiente {
-    font-size: 1.2rem;
-    text-align: center;
-    padding-top: 30px;
-    padding-right: 100px;
-    font-family: "Source Sans Pro", sans-serif;
-}
-
-.entregas-barra {
-    display: flex;
-    padding-top: 7em;
-    padding-bottom: 7em;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-}
-
-.imagen-entregas {
-    width: 750px;
-    padding: 50px;
-    border: #000000;
-    border-radius: 100px;
-}
-
-.parrafo-entregas {
-    font-size: 1.2rem;
-    text-align: center;
-    padding-top: 30px;
-    padding-right: 100px;
-    font-family: "Source Sans Pro", sans-serif;
-} */
-
-.footer__main {
-    padding: auto;
-}
-
-.mapa {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer__ubicacion--titulo {
-    text-align: center;
-    font-size: 1.7rem;
-    padding-top: 3.7vw;
-}
-
-.footer__ubicacion--mapa {
-    padding: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
-.horario-atencion {
-    padding-bottom: 10vh;
-    font-size: 1.7rem;
-    text-align: center;
-}
-
-.footer-contacto {
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.footer-contacto-contenido {
-    list-style-type: none;
-    padding-top: 50px;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.contacto__footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: top;
-    padding-top: 3.7vw;
-    gap: 50px;
-    text-align: center;
-}
-
-.titulo-contacto-footer {
-    font-size: 1.7rem;
-    text-align: center;
-}
-
-.contenido-contacto-footer {
-    list-style-type: none;
-    padding-top: 50px;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.footer-contacto-contenido li a {
-    color: #ffffff;
-} 
 
 /* EMPRESA */
 
-.sobre-nosotros {
-    font-size: 1.5rem;
-    font-weight: 600px;
-    font-family: "Source Sans Pro", sans-serif;
-    text-align: center;
+.seccion-img-central-empresa{
+    background-image: url(../images/imagen-central-empresa.jpg);
+    width: 100%;
+    height: 40rem;
+    background-size: cover;
 }
 
-.futuro-logo {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 600px;
+.sobre-nosotros {
     text-align: center;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     font-size: 1.4rem;
-    border: #000000 5px solid;
-    margin-bottom: 100px;
+}
+
+.contenedor-logo-empresa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
 }
 
 .parrafo-sobre-nosotros {
     font-size: 1.5rem;
     text-align: center;
     font-family: "Source Sans Pro", sans-serif;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.151);
+    border: 5px solid black;
+    border-radius: 50px;
+}
+
+@media (min-width: 1200px){
+    .sobre-nosotros {
+        text-align: center;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        font-size: 1.4rem;
+    }
+
+
+    .contenedor-parrafo-sobre-nosotros{
+        display: flex;
+        text-align: center;
+        padding: auto;
+        margin: auto;
+        max-width: 1300px;
+    }
+
+    .parrafo-sobre-nosotros {
+        display: flex;
+        font-size: 2rem;
+        justify-content: center;
+        align-content: center;
+    }
 }
 
 /* PRODUCTOS */

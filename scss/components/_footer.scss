@@ -1,60 +1,81 @@
-.footer-main {
+.footer {
     background-color: #2c3333;
     color: white;
     font-weight: 600px;
 }
 
-.contenido-contacto-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.contenido-contacto-footer-items {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
-.horario-atencion {
-    text-align: center;
-    padding: 20px;
-}
-
 .footer-superior {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex();
+
+    .card-horario {
+        padding: 3em;
+
+
+        &__titulo {
+            text-align: center;
+            font-size: 1em;
+        }
+
+        &__parrafo {
+            text-align: center;
+            font-size: 1em;
+        }
+    }
+
+    .card-contacto {
+        padding: 3em;
+
+        &__titulo {
+            text-align: center;
+        }
+
+        &__lista {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: row;
+            font-size: 1em;
+            gap: 5px;
+        }
+    }
 }
 
 hr {
     border: 0.2em solid white;
 }
 
-.footer-contacto-contenido li a{
-    color: white;
-}
-
-.footer-contacto-contenido {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-right: 3em;
-    gap: 20px;
-}
-
 .footer-inferior {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    @include flex();
 
-.mapa {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
+    .card-navbar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-right: 3em;
+        gap: 20px;
+
+        li a {
+            color: white;
+
+            &:hover {
+                color: rgb(66, 135, 192);
+            }
+        }
+    }
+
+    .card-mapa {
+        @include flex();
+        flex-direction: column;
+        padding: 30px;
+
+        &__titulo {
+            text-align: center;
+        }
+    }
 }
 
 .footer-copyright {
@@ -65,7 +86,7 @@ hr {
 
 @media (min-width: 1200px) {
     .footer-superior {
-        gap: 20em;
+        gap: 10em;
         font-size: 1.5em;
     }
 
@@ -73,11 +94,11 @@ hr {
         gap: 10em;
     }
 
-    .footer-contacto-contenido{
+    .card-navbar {
         font-size: 1.5em;
     }
 
-    .contenedor-mapa { 
+    .card-mapa__contenido {
         width: 700px;
         height: 200px;
     }

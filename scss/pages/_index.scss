@@ -1,6 +1,6 @@
 /* ----Imagen central Index ---- */
 
-.seccion-img-central {
+.img-central-index {
     background-image: url(../images/imagen-central-index.jpg);
     width: 100%;
     height: 40rem;
@@ -9,80 +9,76 @@
 
 /* ----Barra productos Index---- */
 
-.titulo-productos-comercializados {
-    text-align: center;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    font-size: 1.4rem;
-}
+.card-productos {
+    padding: 3.5em;
 
-.fila-productos {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    gap: 40px;
-}
-
-.titulos-productos-filas {
-    font-size: 1.5rem;
-}
-
-.container__img {
-    width: 100%;
-}
-
-div .items-fila {
-    display: flex;
-}
-
-.items-fila {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 1rem;
-    max-width: 1200px;
-}
-
-@media (min-width: 1200px){
-    .titulo-productos-comercializados{
+    &__titulo-principal {
         text-align: center;
         padding-top: 0.8em;
         padding-bottom: 0.8em;
-        font-size: 2rem;    
+        font-size: 2rem;
     }
 
-    .fila-productos div {
+    &__row {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        gap: 40px;
+
+        .card-productos__items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+            max-width: 1200px;
+
+
+            .card-productos__img {
+                width: 100%;
+            }
+
+            .card-productos__titulo-items {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-productos__titulo-principal {
+        text-align: center;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        font-size: 2.7rem;
+    }
+
+    .card-productos__row div {
         display: flex;
         flex-direction: row;
-        gap: 2.5rem;
+        gap: 5.5rem;
         padding-bottom: 5rem;
         padding-top: 3rem;
         max-width: 1400px;
     }
 
-    div .items-fila {
+    div .card-productos__items {
         display: flex;
         flex-direction: column;
-        gap: 0.2rem;
+        gap: 0.6rem;
     }
 
-    .titulos-productos-filas {
-        font-size: 1.7rem;
+    .card-productos__titulo-items {
+        font-size: 1.5rem;
     }
-
-    .container__img{
-        width: 5rem;
-    }
-    
-
 }
 
 /* ---SECCION MEDIOAMBIENTE Y ENTREGAS--- */
 
-.medioambiente-imagen {
+.card-medioambiente__img {
     width: 100%;
     padding-top: 2em;
     padding-left: 2em;
@@ -90,7 +86,7 @@ div .items-fila {
     border-radius: 30px;
 }
 
-.medioambiente-parrafo {
+.card-medioambiente__parrafo {
     text-align: center;
     border: 0.1em solid #0b2a2c;
     border-width: auto;
@@ -100,7 +96,7 @@ h4 {
     padding: 1.5em;
 }
 
-.entregas-imagen {
+.card-entregas__img {
     width: 100%;
     padding-top: 2em;
     padding-left: 2em;
@@ -108,60 +104,62 @@ h4 {
     border-radius: 50px;
 }
 
-.entregas-parrafo {
+.card-entregas__parrafo {
     text-align: center;
     border: 0.1em solid #0b2a2c;
     border-width: auto;
 
 }
 
-@media (min-width: 1200px){
-    .contenedor-cards{
+@media (min-width: 1200px) {
+    .cards-contenedor {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(2,3fr);
-        max-width: 1400px;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-        gap: 50px
-    }
 
-    .medioambiente-arbol{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 3fr);
+            max-width: 1400px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            gap: 50px;
 
-    .medioambiente-parrafo-estilos {
-        display: flex;
-        padding-top: 40px;
-        max-height: 500px;
-    }
+            .card-medioambiente {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
 
-    h4 .medioambiente-parrafo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .entregas-camion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+            .card-medioambiente__estilos {
+                display: flex;
+                padding-top: 40px;
+                max-height: 500px;
 
-    .entregas-parrafo-estilos {
-        display: flex;
-        padding-top: 40px;
-        max-height: 1200px;
-    }
+                &__parrafo {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0.2em;
+                }
+            }
 
-    h4 .entregas-parrafo {
-        display: flex;
+            .card-entregas {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .card-entregas__estilos {
+                display: flex;
+                padding-top: 40px;
+                max-height: 1200px;
+
+                h4 &__parrafo {
+                    display: flex;
+                }
+            }
+        }
     }
 }

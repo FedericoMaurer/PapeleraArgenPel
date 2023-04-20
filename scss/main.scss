@@ -1,9 +1,11 @@
+// Partial de base
 @import "./base";
 
+// Partial de componentes
 @import "./components/header";
-
 @import "./components/footer";
 
+// Partial de pages
 @import "./pages/index";
 @import "./pages/empresa";
 @import "./pages/productos";

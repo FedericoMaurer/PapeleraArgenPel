@@ -22,16 +22,12 @@
     &__row {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        display: flex;
-        justify-content: center;
-        align-content: center;
+        @include flex();
         text-align: center;
         gap: 40px;
 
         .card-productos__items {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex();
             flex-direction: column;
             padding: 1rem;
             max-width: 1200px;
@@ -59,10 +55,10 @@
     .card-productos__row div {
         display: flex;
         flex-direction: row;
-        gap: 5.5rem;
+        gap: 3rem;
         padding-bottom: 5rem;
         padding-top: 3rem;
-        max-width: 1400px;
+        max-width: 1300px;
     }
 
     div .card-productos__items {
@@ -72,7 +68,7 @@
     }
 
     .card-productos__titulo-items {
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 }
 

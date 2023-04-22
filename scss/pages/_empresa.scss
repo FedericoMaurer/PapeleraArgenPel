@@ -1,21 +1,21 @@
+/*--- SECCIÓN EMPRESA ---*/
+
 /* ----Imagen central Empresa ---- */
 .img-central-empresa {
-    background-image: url(../images/imagen-central-empresa.jpg);
+    background-image: url(../../images/imagen-central-empresa.jpg);
+    background-attachment: fixed;
     width: 100%;
     height: 40rem;
     background-size: cover;
 }
 
-//---Titulo sección---//
+/*--- Titulo sección empresa ---*/
 
 .titulo-sobrenosotros {
-    text-align: center;
-    padding-top: 2em;
-    padding-bottom: 0.8em;
-    font-size: 1.4rem;
+    @include titulo-seccion();
 }
 
-//---Card logo---//
+/*--- Card logo empresa ---*/
 
 .card-logo {
     @include flex();
@@ -27,7 +27,7 @@
     }
 }
 
-//---Card sobre nosotros---//
+/*--- Card sobre nosotros ---*/
 
 .card-sobrenosotros {
     display: flex;
@@ -46,7 +46,7 @@
     }
 }
 
-//---Vista Desktop---//
+/*--- Vista desktop de la sección empresa ---*/
 
 @media (min-width: 1200px) {
     .titulo-sobrenosotros {

@@ -1,9 +1,13 @@
+/*--- SECCIÓN INDEX ---*/
+
+
 /* ----Imagen central Index ---- */
 
 .img-central-index {
-    background-image: url(../images/imagen-central-index.jpg);
+    background-image: url(../../images/imagen-central-index.jpg);
     width: 100%;
     height: 40rem;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -43,6 +47,8 @@
         }
     }
 }
+
+/*--- Vista Desktop barra de productos del index ---*/
 
 @media (min-width: 1200px) {
     .card-productos__titulo-principal {
@@ -106,6 +112,8 @@ h4 {
     border-width: auto;
 
 }
+
+/*--- Vista Desktop barra de productos del index ---*/
 
 @media (min-width: 1200px) {
     .cards-contenedor {

@@ -1,4 +1,6 @@
-//---Titulo sección---//
+/*--- SECCIÓN PRODUCTOS ---*/
+
+/*--- Titulo sección productos ---*/
 
 .nuestros-productos {
     font-family: $fuente-principal;
@@ -9,7 +11,7 @@
     padding-top: 35px;
 }
 
-//---Container sección---//
+/*--- Container de los productos--- */
 
 .container-productos {
     display: flex;
@@ -58,7 +60,7 @@
     }
 }
 
-//---Vista tablet---//
+/*--- Vista tablet de la sección productos ---*/
 
 @media (min-width: 768px) {
     .container-productos {
@@ -98,7 +100,7 @@
     }
 }
 
-//---Vista desktop---//
+/*--- Vista desktop de la sección productos ---*/
 
 @media (min-width: 1200px) {
     .container-productos {

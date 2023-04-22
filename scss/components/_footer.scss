@@ -1,8 +1,12 @@
+/*--- Footer ---*/
+
 .footer {
     background-color: #2c3333;
     color: white;
     font-weight: 600px;
 }
+
+/*--- Parte de Arriba Footer---*/
 
 .footer-superior {
     @include flex();
@@ -44,9 +48,13 @@
     }
 }
 
+/*--- Barra separadora footer--- */
+
 hr {
     border: 0.2em solid white;
 }
+
+/*--- Parte de abajo Footer---*/
 
 .footer-inferior {
     @include flex();
@@ -83,6 +91,8 @@ hr {
     color: #aaaaaa;
     padding-bottom: 1px;
 }
+
+/*--- Vista Desktop Footer ---*/
 
 @media (min-width: 1200px) {
     .footer-superior {

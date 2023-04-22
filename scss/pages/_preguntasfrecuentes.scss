@@ -1,38 +1,186 @@
+/*--- SECCIÓN PREGUNTAS FRECUENTES ---*/
+
+/*--- Titulo de la sección preguntas frecuentes ---*/
+
 .preguntas-frecuentes {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $fuente-principal;
     background-color: #0e8388;
     text-align: center;
     font-size: 3rem;
+    margin-top: 2.5rem;
     padding-bottom: 50px;
     padding-top: 50px;
 }
 
-.pregunta-1 {
-    font-family: "Source Sans Pro", sans-serif;
-    background-color: #ffffff;
-    margin-top: 100px;
-    margin-right: 800px;
-    margin-left: 100px;
-    border-radius: 15px;
-    border-style: double;
+/*--- Tarjetas de preguntas ---*/
+
+.card-preguntas {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 7rem;
+
+    &__1 {
+        font-family: $fuente-principal;
+        @include config-tarjeta-preguntas();
+
+        h3 {
+            font-size: 1.5em;
+            padding: 0.4em;
+        }
+
+        p {
+            font-size: 1em;
+            padding: 1em;
+        }
+    }
+
+    &__2 {
+        font-family: $fuente-principal;
+        @include config-tarjeta-preguntas();
+
+        h3 {
+            font-size: 1.5em;
+            padding: 0.4em;
+        }
+
+        p {
+            font-size: 1em;
+            padding: 1em;
+        }
+    }
+
+    &__3 {
+        font-family: $fuente-principal;
+        @include config-tarjeta-preguntas();
+
+        h3 {
+            font-size: 1.5em;
+            padding: 0.4em;
+        }
+
+        p {
+            font-size: 1em;
+            padding: 1em;
+        }
+    }
 }
 
-.pregunta-2 {
-    font-family: "Source Sans Pro", sans-serif;
-    background-color: #ffffff;
-    margin-top: 100px;
-    margin-left: 800px;
-    border-radius: 15px;
-    border-style: double;
+/*--- Vista tablet de la sección preguntas frecuentes ---*/
+
+@media (min-width: 768px) {
+    .card-preguntas {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        gap: 5rem;
+
+        &__1 {
+            font-family: $fuente-principal;
+            @include config-tarjeta-preguntas();
+
+            h3 {
+                font-size: 4em;
+                padding: 0.4em;
+            }
+
+            p {
+                font-size: 2em;
+                padding: 1em;
+            }
+        }
+
+        &__2 {
+            font-family: $fuente-principal;
+            @include config-tarjeta-preguntas();
+
+            h3 {
+                font-size: 4em;
+                padding: 0.4em;
+            }
+
+            p {
+                font-size: 2em;
+                padding: 1em;
+            }
+        }
+
+        &__3 {
+            font-family: $fuente-principal;
+            @include config-tarjeta-preguntas();
+
+            h3 {
+                font-size: 4em;
+                padding: 0.4em;
+            }
+
+            p {
+                font-size: 2em;
+                padding: 1em;
+            }
+        }
+    }
 }
 
-.pregunta-3 {
-    font-family: "Source Sans Pro", sans-serif;
-    background-color: #ffffff;
-    margin-top: 100px;
-    margin-right: 800px;
-    margin-left: 100px;
-    margin-bottom: 100px;
-    border-radius: 15px;
-    border-style: double;
+/*--- Vista desktop de la sección preguntas frecuentes ---*/
+
+@media (min-width: 1200px) {
+    .contenedor-preguntas {
+        display: flex;
+        justify-content: center;
+
+        .card-preguntas {
+            display: flex;
+            flex-direction: column;
+            padding: 2em;
+            margin-top: 5em;
+            gap: 5rem;
+            max-width: 1350px;
+
+            &__1 {
+                font-family: $fuente-principal;
+                @include config-tarjeta-preguntas();
+
+                h3 {
+                    font-size: 3.5em;
+                    padding: 0.4em;
+                }
+
+                p {
+                    font-size: 1.5em;
+                    padding: 1em;
+                }
+            }
+
+            &__2 {
+                font-family: $fuente-principal;
+                @include config-tarjeta-preguntas();
+
+                h3 {
+                    font-size: 3.5em;
+                    padding: 0.4em;
+                }
+
+                p {
+                    font-size: 1.5em;
+                    padding: 1em;
+                }
+            }
+
+            &__3 {
+                font-family: $fuente-principal;
+                @include config-tarjeta-preguntas();
+
+                h3 {
+                    font-size: 3.5em;
+                    padding: 0.4em;
+                }
+
+                p {
+                    font-size: 1.5em;
+                    padding: 1em;
+                }
+            }
+        }
+    }
 }

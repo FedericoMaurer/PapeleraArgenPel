@@ -1,5 +1,3 @@
-$fuente-principal: "Source Sans Pro", sans-serif;
-$background-principal: #cbe4de;
 @mixin flex() {
 	display: flex;
 	justify-content: center;
@@ -26,6 +24,14 @@ $background-principal: #cbe4de;
     text-align: center;
     border: solid 0.1em black;
     border-radius: 15px;
+}
+
+@mixin preset-imagencentral(){
+    background-attachment: fixed;
+    width: 100%;
+    height: 40rem;
+    background-size: cover;
+    background-position: initial;
 }
 
 /*--- Reseteo ---*/

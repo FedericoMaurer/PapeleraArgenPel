@@ -4,7 +4,7 @@
 
 .nuestros-productos {
     font-family: $fuente-principal;
-    background-color: #0e8388;
+    background-color: $background-titulos;
     text-align: center;
     font-size: 2.5rem;
     padding-bottom: 35px;
@@ -43,7 +43,7 @@
 
             &__img {
                 @include flex();
-                border: solid 0.1em black;
+                border: $borde-parrafos;
                 width: fit-content;
 
                 &__dimension {

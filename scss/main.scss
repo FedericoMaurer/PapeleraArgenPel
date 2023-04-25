@@ -1,4 +1,5 @@
-// Partial de base
+// Partial de base. Se incluye las variables arriba de todo así toma las que están dentro del _base.scss
+@import "./components/variables";
 @import "./base";
 
 // Partial de componentes

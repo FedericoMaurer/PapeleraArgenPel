@@ -9,9 +9,23 @@
 
         .nav-link {
             color: #444444;
+            position: relative;
 
-            &:hover {
-                color: rgba(0, 0, 255, 0.658);
+            &:after{
+                content: "";
+                width: 0;
+                height: 4px;
+                background-color: cadetblue;
+                position: absolute;
+                bottom: 0;
+                right: 50%;
+                transition: all .5s;
+                will-change: width;
+            }
+
+            &:hover:after {
+                width: 100%;
+                right: 0;
             }
         }
     }

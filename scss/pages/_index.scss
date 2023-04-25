@@ -5,10 +5,7 @@
 
 .img-central-index {
     background-image: url(../images/imagen-central-index.jpg);
-    width: 100%;
-    height: 40rem;
-    background-attachment: fixed;
-    background-size: cover;
+    @include preset-imagencentral
 }
 
 /* ----Barra productos Index---- */
@@ -48,6 +45,45 @@
     }
 }
 
+/* ---SECCION MEDIOAMBIENTE Y ENTREGAS--- */
+
+.card-medioambiente__img {
+    width: 100%;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 30px;
+}
+
+h4 {
+    padding: 1.5em;
+
+    .card-medioambiente__parrafo {
+        text-align: center;
+        border: $borde-parrafos;
+        border-width: auto;
+        padding: 1.5em;
+        font-size: 1.5rem;
+    }
+}
+
+.card-entregas__img {
+    width: 100%;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 50px;
+}
+
+.card-entregas__parrafo {
+    text-align: center;
+    border: $borde-parrafos;
+    border-width: auto;
+    padding: 1.5em;
+    font-size: 1.5rem;
+
+}
+
 /*--- Vista Desktop barra de productos del index ---*/
 
 @media (min-width: 1200px) {
@@ -65,61 +101,18 @@
         padding-bottom: 5rem;
         padding-top: 3rem;
         max-width: 1300px;
+
+        .card-productos__items {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+
+            .card-productos__titulo-items {
+                font-size: 1.5em;
+            }
+        }
     }
 
-    div .card-productos__items {
-        display: flex;
-        flex-direction: column;
-        gap: 0.6rem;
-    }
-
-    .card-productos__titulo-items {
-        font-size: 1.5em;
-    }
-}
-
-/* ---SECCION MEDIOAMBIENTE Y ENTREGAS--- */
-
-.card-medioambiente__img {
-    width: 100%;
-    padding-top: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
-    border-radius: 30px;
-}
-
-.card-medioambiente__parrafo {
-    text-align: center;
-    border: 0.1em solid #0b2a2c;
-    border-width: auto;
-    padding: 1.5em;
-    font-size: 1.5rem;
-}
-
-h4 {
-    padding: 1.5em;
-}
-
-.card-entregas__img {
-    width: 100%;
-    padding-top: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
-    border-radius: 50px;
-}
-
-.card-entregas__parrafo {
-    text-align: center;
-    border: 0.1em solid #0b2a2c;
-    border-width: auto;
-    padding: 1.5em;
-    font-size: 1.5rem;
-
-}
-
-/*--- Vista Desktop barra de productos del index ---*/
-
-@media (min-width: 1200px) {
     .cards-contenedor {
         display: flex;
         flex-direction: column;
@@ -171,3 +164,4 @@ h4 {
         }
     }
 }
+

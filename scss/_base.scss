@@ -1,7 +1,7 @@
 @mixin flex() {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @mixin titulo-seccion() {
@@ -11,7 +11,7 @@
     font-size: 1.4rem;
 }
 
-@mixin config-input(){
+@mixin config-input() {
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
@@ -19,14 +19,14 @@
     font-size: 1.1em;
 }
 
-@mixin config-tarjeta-preguntas(){
+@mixin config-tarjeta-preguntas() {
     background-color: white;
     text-align: center;
     border: solid 0.1em black;
     border-radius: 15px;
 }
 
-@mixin preset-imagencentral(){
+@mixin preset-imagencentral() {
     background-attachment: fixed;
     width: 100%;
     height: 40rem;
@@ -36,7 +36,7 @@
 
 /*--- Reseteo ---*/
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -47,12 +47,11 @@ a {
     text-decoration: none;
 }
 
-ul, ol {
+ul,
+ol {
     list-style-type: none;
 }
 
 body {
     background-color: $background-principal;
 }
-
-

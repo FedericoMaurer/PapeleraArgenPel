@@ -25,7 +25,7 @@
 
 <body>
     <header class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div data-aos="zoom-in-down" class="container-fluid">
             <a class="navbar-brand w-50" href="../index.html">
                 <h1><img src="../images/logo-header.png" alt="logo de la empresa" class="w-75"> </h1>
             </a>
@@ -60,25 +60,24 @@
             <div class="img-central-contacto">
             </div>
         </section>
-        <section>
-            <form action="https://formspree.io/f/xdovjajr"
-            method="POST" name="contacto" class="form-contacto" action="">
+        <section data-aos="zoom-out">
+            <form action="https://formspree.io/f/xdovjajr" method="POST" class="form-contacto" action="">
                 <div class="titulo-contacto">
                     <h2>ENVIANOS TU MENSAJE</h2>
                 </div>
                 <div>
                     <input name="nombre" aria-label="Nombre" class="form-contacto__input" id="nombre-usuario"
                         type="text" placeholder="Nombre*">
-                    <input name="apellido" aria-label="Apellido" class="form-contacto__input"
-                        id="apellido-usuario" type="text" placeholder="Apellido*">
-                    <input name="email" aria-label="Email" class="form-contacto__input" id="email-usuario"
-                        type="email" placeholder="Email*">
-                    <input name="telefono" aria-label="Telefono" class="form-contacto__input"
-                        id="telefono-usuario" type="text" placeholder="Telefono*">
-                    <textarea name="message" aria-label="Mensaje del usuario" class="form-contacto__textarea"
-                        textarea name="" id="mensaje-usuario" rows="10" placeholder="Mensaje*"></textarea>
-                    <input aria-label="Boton de enviar mensaje" class="form-contacto__boton"
-                        type="submit" value="Enviar mensaje">
+                    <input name="apellido" aria-label="Apellido" class="form-contacto__input" id="apellido-usuario"
+                        type="text" placeholder="Apellido*">
+                    <input name="email" aria-label="Email" class="form-contacto__input" id="email-usuario" type="email"
+                        placeholder="Email*">
+                    <input name="telefono" aria-label="Telefono" class="form-contacto__input" id="telefono-usuario"
+                        type="text" placeholder="Telefono*">
+                    <textarea name="message" aria-label="Mensaje del usuario" class="form-contacto__textarea" textarea
+                        name="" id="mensaje-usuario" rows="10" placeholder="Mensaje*"></textarea>
+                    <input aria-label="Boton de enviar mensaje" class="form-contacto__boton" type="submit"
+                        value="Enviar mensaje">
                 </div>
             </form>
         </section>
